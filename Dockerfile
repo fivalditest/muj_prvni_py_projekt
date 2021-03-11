@@ -7,6 +7,8 @@ RUN apt-get update && \
     apt-get -y install python3-flask ack && \
     apt-get clean
 
+RUN mkdir /src
+
 COPY entrypoint.sh /entrypoint.sh
 
 EXPOSE 5000
