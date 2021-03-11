@@ -1,1 +1,5 @@
-bash
+#!/bin/bash
+
+# spustit bash
+export FLASK_APP=hello.py
+flask run
