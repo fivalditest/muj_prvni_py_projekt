@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cd /src
+
 # spustit bash
+pwd
 export FLASK_APP=hello.py
-flask run
+flask run --host=0.0.0.0
