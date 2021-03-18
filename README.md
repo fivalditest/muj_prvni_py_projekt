@@ -9,7 +9,7 @@ Produkční image
 
 `docker run -p 127.0.0.1:5000:5000/tcp -it fivaldi/muj_prvni_py_projekt:prod`
 
-- Nebo spuštění z Docker Hubu na pozadí a připojení do kontejneru přes bash:
+- Nebo z Docker Hubu, spuštění na pozadí a připojení do kontejneru přes bash:
 
 `docker run -d -p 127.0.0.1:5000:5000/tcp -it fivaldi/muj_prvni_py_projekt:prod`
 (vypíše ID spuštěného konejneru)
