@@ -17,8 +17,8 @@ Produkční image
 `docker exec -it <ID spuštěného konejneru> bash`
 
 
-Vývojová image
-==============
+Vývojová / testovací image
+==========================
 
 `docker build -f Dockerfile-tests .`
 
