@@ -2,7 +2,7 @@
 
 
 export FLASK_APP=hello.py
-echo "$PROJECT_ENV"
+echo Project environment: "$PROJECT_ENV"
 
 if [ "$PROJECT_ENV" == "dev" ] ; then
 	cd /src
