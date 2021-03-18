@@ -1,4 +1,4 @@
-Produkcni image
+Produkční image
 ===============
 
 `docker build .`
@@ -6,7 +6,7 @@ Produkcni image
 `docker run -p 127.0.0.1:5000:5000/tcp -it <ID PRODUKCNI IMAGE>`
 
 
-Vyvojova image
+Vývojová image
 ==============
 
 `docker build -f Dockerfile-tests .`
@@ -14,4 +14,4 @@ Vyvojova image
 `docker run -p 127.0.0.1:5000:5000/tcp -it -v /cesta/ke/git/projektu/muj_prvni_py_projekt:/src <ID TESTOVACI IMAGE>`
 
 
-V prohlizeci: http://127.0.0.1:5000/
+V prohlížeči: http://127.0.0.1:5000/
