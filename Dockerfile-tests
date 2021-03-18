@@ -4,7 +4,10 @@ LABEL maintainer="Filip Valder <filip.valder@gmail.com>"
 
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get -y install python3-flask python3-requests python3-pytest flake8 ack curl && \
+    # prod dependencies
+    apt-get -y install python3-flask && \
+    # test/dev dependencies
+    apt-get -y install python3-requests python3-pytest flake8 ack curl && \
     apt-get clean
 
 RUN mkdir /src
