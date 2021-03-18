@@ -4,13 +4,15 @@ LABEL maintainer="Filip Valder <filip.valder@gmail.com>"
 
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get -y install python3-flask ack && \
+    apt-get -y install python3-flask python3-requests python3-pytest flake8 ack curl && \
     apt-get clean
 
-COPY / /app
+RUN mkdir /src
 
 COPY entrypoint.sh /entrypoint.sh
 
 EXPOSE 5000
+
+ENV PROJECT_ENV=dev
 
 CMD ["/entrypoint.sh"]
