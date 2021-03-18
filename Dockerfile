@@ -13,4 +13,6 @@ COPY entrypoint.sh /entrypoint.sh
 
 EXPOSE 5000
 
+ENV PROJECT_ENV=prod
+
 CMD ["/entrypoint.sh"]
